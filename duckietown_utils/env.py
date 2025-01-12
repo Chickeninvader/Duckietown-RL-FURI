@@ -65,7 +65,8 @@ def launch_and_wrap_env(env_config, default_env_id=0):
                 distortion=env_config["distortion"],
                 frame_rate=env_config["simulation_framerate"],
                 frame_skip=env_config["frame_skip"],
-                robot_speed=robot_speed
+                robot_speed=robot_speed,
+                render_mode='none'
             )
             spawn_successful = True
         except Exception as e:
